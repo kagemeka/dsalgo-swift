@@ -1,0 +1,6 @@
+services:
+  dev:
+    image: swift:latest
+    tty: true
+    volumes:
+      - .:/root/dsalgo-swift/
