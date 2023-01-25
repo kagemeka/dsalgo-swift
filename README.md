@@ -14,7 +14,6 @@ source ~/.bashrc
 - markdownlint
 - shell-format
 - Bash IDE
-- Even Better TOML
 - YAML
 - Swift
 - SwiftLint
