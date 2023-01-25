@@ -40,7 +40,9 @@ extension Modular: BinaryOperation {
 extension Modular: AssociativeProperty where F == Modular, T == Modular {
   func assertAssociative(first: Modular, second: Modular, third: Modular)
     -> Bool
-  { return self.operate(first) == (second.operate(third)).operate(first) }
+  {
+    return self.operate(first) == (second.operate(third)).operate(first)
+  }
 }
 
 extension Modular: IdentityElement
