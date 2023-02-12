@@ -1,7 +1,7 @@
 #!/bin/bash
 
 swift-format -i -r -p .
-swiftlint
+swiftlint .
 pre-commit run --all-files
 
 swift test
