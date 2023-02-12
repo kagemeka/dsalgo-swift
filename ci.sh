@@ -3,3 +3,5 @@
 swift-format -i -r -p .
 swiftlint
 pre-commit run --all-files
+
+swift test

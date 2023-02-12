@@ -3,14 +3,18 @@
 import PackageDescription
 
 let package = Package(
-  name: "Dsalgo",
-  products: [.library(name: "dsalgo", targets: ["Dsalgo"])],
+  name: "DsAlgo",
+  products: [.library(name: "dsalgo", targets: ["cplib"])],
   dependencies: [],
 
   targets: [
     .target(
-      name: "Dsalgo"  // resources: [.process("Sources/")]
+      name: "cplib"
     ),
-    .testTarget(name: "DsalgoTests"),
+    .executableTarget(
+      name: "main",
+      dependencies: ["cplib"]
+    ),
+    .testTarget(name: "cplib_test"),
   ]
 )

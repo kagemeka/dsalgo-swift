@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug main",
+            "program": "${workspaceFolder:dsalgo-swift}/.build/debug/main",
+            "args": [],
+            "cwd": "${workspaceFolder:dsalgo-swift}",
+            "preLaunchTask": "swift: Build Debug main"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release main",
+            "program": "${workspaceFolder:dsalgo-swift}/.build/release/main",
+            "args": [],
+            "cwd": "${workspaceFolder:dsalgo-swift}",
+            "preLaunchTask": "swift: Build Release main"
+        }
+    ]
+}
