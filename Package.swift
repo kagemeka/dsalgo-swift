@@ -15,6 +15,6 @@ let package = Package(
       name: "main",
       dependencies: ["cplib"]
     ),
-    // .testTarget(name: "DsalgoTests"),
+    .testTarget(name: "cplib_test"),
   ]
 )
