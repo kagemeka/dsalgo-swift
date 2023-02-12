@@ -1,2 +1,6 @@
 {
+  "lineBreakAroundMultilineExpressionChainComponents": true,
+  "lineBreakBeforeEachArgument": true,
+  "lineBreakBeforeEachGenericRequirement": true,
+  "lineLength": 80
 }
