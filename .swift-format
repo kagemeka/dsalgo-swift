@@ -2,5 +2,8 @@
   "lineBreakAroundMultilineExpressionChainComponents": true,
   "lineBreakBeforeEachArgument": true,
   "lineBreakBeforeEachGenericRequirement": true,
-  "lineLength": 80
+  "lineLength": 80,
+  "indentation": {
+    "spaces": 4
+  }
 }
