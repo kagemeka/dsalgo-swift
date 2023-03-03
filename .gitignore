@@ -2,4 +2,5 @@
 SwiftLint
 swift-format
 Packages
+Package.resolved
 !.gitkeep
