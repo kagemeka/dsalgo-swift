@@ -3,17 +3,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "DsAlgo",
-    products: [.library(name: "dsalgo", targets: ["cplib"])],
-    dependencies: [],
-
+    name: "dsalgo",
+    products: [.library(name: "dsalgo", targets: ["cplib", "dsalgo"])],
     targets: [
-        .target(
-            name: "cplib"
-        ),
+        .target(name: "cplib"),
+        .target(name: "dsalgo"),
         .executableTarget(
             name: "main",
-            dependencies: ["cplib"]
+            dependencies: [
+                "cplib",
+                "dsalgo",
+            ]
         ),
         .testTarget(name: "cplib_test"),
     ]
