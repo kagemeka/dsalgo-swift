@@ -1,3 +1,4 @@
 {
-    "lldb.library": "/usr/lib/liblldb.so"
+    "lldb.library": "/usr/lib/liblldb.so",
+    "files.autoSaveDelay": 3000,
 }
