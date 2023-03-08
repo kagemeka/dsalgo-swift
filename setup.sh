@@ -1,11 +1,17 @@
 install_swiftlint() {
-    git clone https://github.com/realm/SwiftLint.git
-    p=$(pwd) # snapshot
-    cd SwiftLint
-    swift build -c release
-    mv .build/release/swiftlint /usr/local/bin/
-    cd $p
-    rm -r SwiftLint
+    REPO=https://github.com/realm/SwiftLint
+    TAG=0.50.3
+    FILE=swiftlint_linux.zip
+    URL=$REPO/releases/download/$TAG/$FILE
+    rm -r tmp
+    mkdir tmp
+    cd tmp
+    wget $URL
+    unzip $FILE
+    mv swiftlint /usr/local/bin/
+    swiftlint --version
+    cd ..
+    rm -r tmp
 }
 
 install_swift-format() {
